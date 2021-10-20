@@ -3,7 +3,7 @@
 
 # Description
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/ThiagoMigliorati/pyswagger/blob/main/img/image.png)
 
 # Install
 
