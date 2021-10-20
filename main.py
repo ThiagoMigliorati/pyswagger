@@ -1,3 +1,4 @@
+import logging
 from flask import Flask, request
 from blueprints.basic_endpoints import blueprint as basic_endpoints
 from blueprints.jinja_endpoint import blueprint as jinja_template_blueprint
@@ -12,6 +13,8 @@ app.register_blueprint(documented_endpoint)
 
 
 if __name__ == "__main__":
+    logging.basicConfig(filename='myapp.log', level=logging.INFO)
+    logging.info('Started')
     app.run()
 
 @app.route('/basic_api/hello_world')
